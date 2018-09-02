@@ -1,34 +1,34 @@
 import React from 'react';
 import Loadable from 'react-loadable'
 
-import App from '../components/AppContainer/App';
+import App from './components/AppContainer/App';
 
 function Loading() {
     return <div>Loading...</div>;
 }
 
 const Home = Loadable({
-  loader: () => import('../components/Page/Home'),
+  loader: () => import('./components/Page/Home/Home'),
   loading: Loading
 });
 
 const About = Loadable({
-  loader: () => import('../components/Page/About'),
+  loader: () => import('./components/Page/About/About'),
   loading: Loading
 });
 
 const Resume = Loadable({
-  loader: () => import('../components/Page/Resume'),
+  loader: () => import('./components/Page/Resume/Resume'),
   loading: Loading
 });
 
 const Portfolio = Loadable({
-  loader: () => import('../components/Page/Portfolio'),
+  loader: () => import('./components/Page/Portfolio/Portfolio'),
   loading: Loading
 });
 
 const Contact = Loadable({
-  loader: () => import('../components/Page/Contact'),
+  loader: () => import('./components/Page/Contact/Contact'),
   loading: Loading
 });
 
