@@ -5,7 +5,12 @@ class Header extends Component {
     render() { 
         return (
             <header className="site-header">
-                <Link to="/">SAIPUL HIDAYAT</Link>
+                <Link to="/home">Saipul Hidayat</Link>
+                <div className="collapse-bar">
+                    <div className="bar-line"></div>
+                    <div className="bar-line"></div>
+                    <div className="bar-line"></div>
+                </div>
             </header>
         );
     }

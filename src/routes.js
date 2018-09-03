@@ -1,7 +1,7 @@
 import React from 'react';
 import Loadable from 'react-loadable'
 
-import App from './components/AppContainer/App';
+import App from './components/App/App';
 
 function Loading() {
     return <div>Loading...</div>;

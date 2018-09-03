@@ -1,3 +1,7 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -7,5 +11,21 @@ body {
 
 .site-header {
   width: 100%;
-  min-height: 50px;
-  background-color: #fff; }
+  min-height: 30px;
+  background-color: #fff;
+  padding: 10px; }
+  .site-header a {
+    font-size: 20px;
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: 700; }
+  .site-header .collapse-bar {
+    float: right;
+    margin-right: 10px; }
+    .site-header .collapse-bar .bar-line {
+      width: 40px;
+      height: 3px;
+      background-color: #000;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      border-radius: 1px; }
