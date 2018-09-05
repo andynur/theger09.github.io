@@ -1,22 +1,13 @@
 import React, { Component } from 'react'
+import { Navbar, NavbarToggler, NavbarBrand } from 'reactstrap';
 
 class Header extends Component {
-  render() { 
+  render() {
     return (
       <div className="menu-header">
-        <Navbar color="faded" light>
+        <Navbar color="light" light>
           <NavbarBrand href="/" className="mr-auto">Saipul Hidayat</NavbarBrand>
           <NavbarToggler className="mr-2" />
-          <Collapse navbar>
-            <Nav navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
         </Navbar>
       </div>
     );

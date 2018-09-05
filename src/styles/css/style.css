@@ -6337,3 +6337,14 @@ body {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
+
+.navbar-light .navbar-brand {
+  color: #2962FF;
+  font-weight: bold; }
+
+.menu-header {
+  display: none; }
+
+@media (max-width: 768px) {
+  .menu-header {
+    display: block; } }
