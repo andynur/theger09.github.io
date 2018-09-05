@@ -1,19 +1,26 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 
 class Header extends Component {
-    render() { 
-        return (
-            <header className="site-header">
-                <Link to="/home">Saipul Hidayat</Link>
-                <div className="collapse-bar">
-                    <div className="bar-line"></div>
-                    <div className="bar-line"></div>
-                    <div className="bar-line"></div>
-                </div>
-            </header>
-        );
-    }
+  render() { 
+    return (
+      <div className="menu-header">
+        <Navbar color="faded" light>
+          <NavbarBrand href="/" className="mr-auto">Saipul Hidayat</NavbarBrand>
+          <NavbarToggler className="mr-2" />
+          <Collapse navbar>
+            <Nav navbar>
+              <NavItem>
+                <NavLink href="/components/">Components</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
  
 export default Header;
