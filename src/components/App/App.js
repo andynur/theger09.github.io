@@ -1,16 +1,25 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
+import routes from '../../routes';
 
-import ContainerDefault from './ContainerDefault';
+import Header from '../Header/Header';
 
 class App extends Component {
   render() {
     return (
-      <HashRouter>
-        <Switch>
-          <Route path='*' exact={true} component={ContainerDefault}/>
-        </Switch>
-      </HashRouter>
+      <div className="app">
+        <Header/>
+        <HashRouter>
+          <Switch>
+            {
+              routes.map( (route, idx) => {
+              return route.component ? (
+              <Route key={idx} path={route.path} exact={route.exact} name={route.name} render={ props => (<route.component {...props} />)} />): (null);})
+            }
+          <Redirect from="/" to="/home" />
+          </Switch>
+        </HashRouter>
+      </div>
     );
   }
 }
