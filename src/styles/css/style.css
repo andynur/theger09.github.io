@@ -6324,3 +6324,16 @@ body {
   color: #666;
   background-color: #ecf0f1;
   line-height: 2; }
+
+.bg-white .navbar-brand {
+  font-weight: bold;
+  color: #039BE5; }
+
+.bg-white .navbar-toggler,
+.bg-white .navbar-toggler:hover,
+.bg-white .navbar-toggler:focus {
+  border: none;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
