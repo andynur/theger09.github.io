@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
 import routes from '../../routes';
 
-import Header from '../Header/Header';
+import Header from '../Header';
+import Sidebar from '../Sidebar';
 
 class App extends Component {
   render() {
     return (
       <div className="app">
         <Header/>
-        <HashRouter>
+        <Sidebar/>
+        {/* <HashRouter>
           <Switch>
             {
               routes.map( (route, idx) => {
@@ -18,7 +20,7 @@ class App extends Component {
             }
           <Redirect from="/" to="/home" />
           </Switch>
-        </HashRouter>
+        </HashRouter> */}
       </div>
     );
   }
