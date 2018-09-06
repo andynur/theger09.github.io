@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
-import routes from '../../routes';
+// import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
+// import routes from '../../routes';
 
 import Header from '../Header';
 import Sidebar from '../Sidebar';
