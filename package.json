@@ -20,8 +20,8 @@
     "react-scripts": "^1.1.5"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar --include-path ./node_modules ./src/styles/scss -o ./src/styles/css",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./node_modules ./src/styles/scss -o ./src/styles/css --watch --recursive",
+    "build-css": "node-sass-chokidar --include-path ./node_modules ./src/assets/scss -o ./src/assets/css",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./node_modules ./src/assets/scss -o ./src/assets/css --watch --recursive",
     "start-js": "react-scripts start",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
