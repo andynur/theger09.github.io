@@ -6338,6 +6338,10 @@ body {
   -moz-box-shadow: none;
   box-shadow: none; }
 
+.wraper {
+  margin-left: 360px;
+  padding: 0px 50px; }
+
 .navbar-light {
   z-index: 9999; }
   .navbar-light .navbar-brand {
@@ -6358,9 +6362,9 @@ body {
   bottom: 0;
   width: 360px;
   background-color: #ffffff;
-  box-shadow: -19px 0px 60px 10px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -19px 0px 60px 10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -19px 0px 60px 10px rgba(0, 0, 0, 0.75); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
   .sidebar .picture-profile {
     width: 100%;
     min-height: 200px;
@@ -6379,3 +6383,27 @@ body {
       margin-bottom: 0px; }
     .sidebar .name-profile .nickname {
       color: #666666; }
+  .sidebar .sosial-media {
+    margin-top: 15px;
+    text-align: center; }
+    .sidebar .sosial-media a {
+      padding: 0px 10px;
+      color: #212121; }
+    .sidebar .sosial-media a:hover {
+      color: #2196F3; }
+  .sidebar .list-menu {
+    margin-top: 20px;
+    text-align: center; }
+    .sidebar .list-menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+      .sidebar .list-menu ul li {
+        padding: 2px 0px; }
+        .sidebar .list-menu ul li a {
+          font-size: 13px;
+          font-weight: 500;
+          color: #212121;
+          text-decoration: none; }
+        .sidebar .list-menu ul li a:hover {
+          color: #2196F3; }

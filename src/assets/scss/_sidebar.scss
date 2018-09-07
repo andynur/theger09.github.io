@@ -5,9 +5,9 @@
     bottom: 0;
     width: 360px;
     background-color: #ffffff;
-    box-shadow: -19px 0px 60px 10px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -19px 0px 60px 10px rgba(0,0,0,0.75);
-       -moz-box-shadow: -19px 0px 60px 10px rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+       -moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
 
     .picture-profile {
         width: 100%;
@@ -24,7 +24,6 @@
 
     .name-profile {
         text-align: center;
-        // background-color: #dddddd;
         
         .fullname {
             font-size: 22px;
@@ -35,6 +34,46 @@
 
         .nickname {
             color: #666666;
+        }
+    }
+
+    .sosial-media {
+        margin-top: 15px;
+        text-align: center;
+
+        a {
+            padding: 0px 10px;
+            color: #212121;
+        }
+
+        a:hover {
+            color: #2196F3;
+        }
+    }
+
+    .list-menu {
+        margin-top: 20px;
+        text-align: center;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        
+            li {
+                padding: 2px 0px;
+
+                a {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #212121;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: #2196F3;
+                }
+            }
         }
     }
 
