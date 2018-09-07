@@ -8,6 +8,10 @@ class Sidebar extends Component {
                 <div className="picture-profile">
                     <img src={ProfilePicture} alt="Profile Picture" srcset={ProfilePicture}/>
                 </div>
+                <div className="name-profile">
+                    <h3 className="fullname">Saipul Hidayat</h3>
+                    <span className="nickname">@TheGerr09</span>
+                </div>
             </div>
         );
     }

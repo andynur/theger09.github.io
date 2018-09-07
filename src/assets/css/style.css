@@ -6321,13 +6321,13 @@ body, html {
 body {
   overflow: hidden;
   font-family: 'Quicksand', sans-serif;
-  color: #666;
+  color: #212121;
   background-color: #ecf0f1;
   line-height: 2; }
 
 .bg-white .navbar-brand {
   font-weight: bold;
-  color: #039BE5; }
+  color: #03A9F4; }
 
 .bg-white .navbar-toggler,
 .bg-white .navbar-toggler:hover,
@@ -6338,9 +6338,11 @@ body {
   -moz-box-shadow: none;
   box-shadow: none; }
 
-.navbar-light .navbar-brand {
-  color: #2962FF;
-  font-weight: bold; }
+.navbar-light {
+  z-index: 9999; }
+  .navbar-light .navbar-brand {
+    color: #2196F3;
+    font-weight: bold; }
 
 .menu-header {
   display: none; }
@@ -6354,8 +6356,11 @@ body {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 400px;
-  background-color: #ffffff; }
+  width: 360px;
+  background-color: #ffffff;
+  box-shadow: -19px 0px 60px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -19px 0px 60px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -19px 0px 60px 10px rgba(0, 0, 0, 0.75); }
   .sidebar .picture-profile {
     width: 100%;
     min-height: 200px;
@@ -6365,3 +6370,12 @@ body {
       border-radius: 50%;
       width: 140px;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.34), -1px 1px 1px rgba(0, 0, 0, 0.34); }
+  .sidebar .name-profile {
+    text-align: center; }
+    .sidebar .name-profile .fullname {
+      font-size: 22px;
+      font-weight: bold;
+      width: 100%;
+      margin-bottom: 0px; }
+    .sidebar .name-profile .nickname {
+      color: #666666; }
