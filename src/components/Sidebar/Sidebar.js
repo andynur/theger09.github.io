@@ -12,6 +12,30 @@ class Sidebar extends Component {
                     <h3 className="fullname">Saipul Hidayat</h3>
                     <span className="nickname">@TheGerr09</span>
                 </div>
+                <div className="sosial-media">
+                    <ul>
+                        <li>
+                            <a href="http://">
+                                <i className=""></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://">
+                                <i className=""></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://">
+                                <i className=""></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://">
+                                <i className=""></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         );
     }
