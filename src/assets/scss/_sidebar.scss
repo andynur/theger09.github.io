@@ -1,0 +1,23 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 400px;
+    background-color: #ffffff;
+
+    .picture-profile {
+        width: 100%;
+        min-height: 200px;
+        padding: 50px 0px 20px 0px;
+        text-align: center;
+
+        img {
+            border-radius: 50%;
+            width: 140px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.34), -1px 1px 1px rgba(0, 0, 0, 0.34)
+        }
+
+    }
+
+}
