@@ -1,13 +1,22 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import classNames from 'classnames';
 import ProfilePicture from '../../assets/img/profile.png'
 
 class Sidebar extends Component {
-    render() { 
+    render() {
+        let sidebarClass = classNames({
+            'sidebar': true,
+            'animated': true,
+            'slideInLeft': this.props.showSidebar,
+            'slideOutLeft': !this.props.showSidebar
+        })
+
         return (
-            <div className="sidebar">
+            <div className={sidebarClass}>
+                <i className="close-sidebar pe-7s-close" onClick={this.props.onShowSidebar}></i>
                 <div className="picture-profile">
-                    <img src={ProfilePicture} alt="Saipul Hidayat" srcset={ProfilePicture}/>
+                    <img src={ProfilePicture} alt="Saipul Hidayat" srcSet={ProfilePicture}/>
                 </div>
                 <div className="name-profile">
                     <h3 className="fullname">Saipul Hidayat</h3>
@@ -33,19 +42,19 @@ class Sidebar extends Component {
                 <div className="list-menu">
                     <ul>
                         <li>
-                            <Link to="/">HOME</Link>
+                            <Link to="/home" onClick={this.props.onShowSidebar}>HOME</Link>
                         </li>
                         <li>
-                            <Link to="/">ABOUT ME</Link>
+                            <Link to="/about" onClick={this.props.onShowSidebar}>ABOUT ME</Link>
                         </li>
                         <li>
-                            <Link to="/">MY REMSUME</Link>
+                            <Link to="/resume" onClick={this.props.onShowSidebar}>MY REMSUME</Link>
                         </li>
                         <li>
-                            <Link to="/">PORTFOLIO</Link>
+                            <Link to="/portfolio" onClick={this.props.onShowSidebar}>PORTFOLIO</Link>
                         </li>
                         <li>
-                            <Link to="/">CONTACT</Link>
+                            <Link to="/contact" onClick={this.props.onShowSidebar}>CONTACT</Link>
                         </li>
                     </ul>
                 </div>

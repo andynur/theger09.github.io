@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
-import AppContainer from './AppContainer';
+import React, { Component } from 'react'
+import { HashRouter, Route, Switch } from 'react-router-dom'
+import AppContainer from './AppContainer'
 
 class App extends Component {
   render() {

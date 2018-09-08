@@ -30,7 +30,9 @@ body {
     }
 }
 
-.wraper {
-    margin-left: 360px;
-    padding: 0px 50px;
+@media(min-width: 769px) {
+    .wraper {
+        margin-left: 360px;
+        padding: 0px 50px;
+    }
 }
