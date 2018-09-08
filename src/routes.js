@@ -8,27 +8,27 @@ function Loading() {
 }
 
 const Home = Loadable({
-  loader: () => import('./components/Page/Home/Home'),
+  loader: () => import('./components/Page/Home'),
   loading: Loading
 });
 
 const About = Loadable({
-  loader: () => import('./components/Page/About/About'),
+  loader: () => import('./components/Page/About'),
   loading: Loading
 });
 
 const Resume = Loadable({
-  loader: () => import('./components/Page/Resume/Resume'),
+  loader: () => import('./components/Page/Resume'),
   loading: Loading
 });
 
 const Portfolio = Loadable({
-  loader: () => import('./components/Page/Portfolio/Portfolio'),
+  loader: () => import('./components/Page/Portfolio'),
   loading: Loading
 });
 
 const Contact = Loadable({
-  loader: () => import('./components/Page/Contact/Contact'),
+  loader: () => import('./components/Page/Contact'),
   loading: Loading
 });
 
