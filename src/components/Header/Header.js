@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, NavbarToggler, NavbarBrand } from 'reactstrap';
+import { Navbar, NavbarToggler, NavbarBrand } from 'reactstrap'
 
 class Header extends Component {
   render() {
@@ -7,7 +7,7 @@ class Header extends Component {
       <div className="menu-header">
         <Navbar color="light" light>
           <NavbarBrand href="/" className="mr-auto">Saipul Hidayat</NavbarBrand>
-          <NavbarToggler className="mr-2" />
+          <NavbarToggler onClick={this.props.onShowSidebar}/>
         </Navbar>
       </div>
     );
